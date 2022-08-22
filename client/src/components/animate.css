@@ -1,0 +1,233 @@
+.scrollDown {
+  display: block;
+  width: 15px;
+  height: 67px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    -180deg,
+    transparent,
+    black 50%,
+    transparent 50%,
+    transparent
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+  animation-name: scroll-down;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); /* easeOutQuintのイージング */
+  animation-delay: 0.7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+  
+@keyframes scroll-down {
+  0% {
+    background-position: 0 100%;
+  }
+  
+  50% {
+    background-position: 0 0;
+  }
+  
+  100% {
+    background-position: 0 -100%;
+  }
+}
+.circle {
+    align-self: center;
+    height: 49px;
+    width: 49px;
+    background-color: #505050;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: fade-inout;
+    animation-duration: 2s;
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes fade-inout {
+    0% {
+      opacity: 0;
+    }
+    
+    50% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+}
+.disappearLine{
+    display: block;
+    width: 15px;
+    height: 71px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: linear-gradient(
+      -180deg,
+      transparent,
+      black 50%,
+      transparent 50%,
+      transparent
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    animation-name: disapear-line;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); /* easeOutQuintのイージング */
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes disapear-line {
+    0% {
+      background-position: 0 100%;
+    }
+    25%{
+      opacity: 1;
+    }
+    50% {
+      background-position: 0 0;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+.fliker{
+  display: block;
+  width: 15px;
+  height: 71px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    -180deg,
+    transparent,
+    black 50%,
+    transparent 50%,
+    transparent
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+  animation-name: bar-fliker;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); /* easeOutQuintのイージング */
+  animation-delay: 0.7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+@keyframes bar-fliker {
+    0% {
+      background-position: 0 100%;
+    }
+    
+    50% {
+      background-position: 0 0;
+    }
+    52%{ opacity: 1;}
+    61% { opacity: 0.5;}
+    70%{ opacity: 1;}
+    79%{ opacity: 0.5; }
+    88%{ opacity: 1;}
+    100% { opacity: 0; }
+  }
+.flikerCircle {
+    align-self: center;
+    height: 49px;
+    width: 49px;
+    background-color: #505050;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: circle-fliker;
+    animation-duration: 2s;
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes circle-fliker {
+    0% {
+      opacity: 0;
+    }
+    
+    50% {
+      opacity: 1;
+    }
+    52%{ opacity: 1;}
+    61% { opacity: 0.5;}
+    70%{ opacity: 1;}
+    79%{ opacity: 0.5; }
+    88%{ opacity: 1;}
+    100% { opacity: 0; }
+}
+.inflateCircle {
+    align-self: center;
+    height: 39px;
+    width: 39px;
+    background-color: #505050;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: circle-inflate;
+    animation-duration: 2s;
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes circle-inflate {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      height: 39px;
+      width: 39px;
+    }
+    82% {
+      height: 69px;
+      width: 69px;
+    }
+    100%{
+      height: 69px;
+      width: 69px;  
+    }
+}
+.chizimuLine{
+    display: block;
+    width: 15px;
+    height: 77px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        -180deg,
+        transparent,
+        black 50%,
+        transparent 50%,
+        transparent
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    animation-name: chizimi-line;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); /* easeOutQuintのイージング */
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes chizimi-line {
+    0% {
+      background-position: 0 100%;
+    }
+    
+    50% {
+      background-position: 0 0;
+    }
+    53%{
+      height: 77px;
+    }
+    100% {
+      background-position: 0 -100%;
+      height: 62px;
+    }
+  }

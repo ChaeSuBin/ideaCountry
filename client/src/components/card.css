@@ -1,0 +1,93 @@
+.ToDoListItem {
+    align-self: stretch;
+    margin: 12px;
+    margin-bottom: 2em;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    padding: 4px 12px;
+    color:#333;
+  }
+  
+  .ToDoListItem-title {
+    font-size: 19px;
+    margin: 0 8px 4px;
+    border-bottom: 1px solid rgb(59, 59, 59);
+    text-align: left;
+    padding: 4px 8px;
+    color:#0057e5;
+  }
+  
+  .ToDoListItem-description {
+    width: 700px;
+    font-size: 16px;
+    word-wrap: break-word;
+    text-align: left;
+    padding: 8px;
+    color:#4c4c4c;
+  }
+
+  .AlertListItem {
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin: 10px;
+    padding: 1em 2em;
+    width: 300px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #cccccc;
+    transition: 0.3s;
+  }
+  .AlertListItem::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #2285b1;
+    border-radius: 50vh;
+    transition: 0.3s;
+  }
+  
+  .AlertListItem:hover {
+    text-decoration: none;
+    background-color: #bbbbbb;
+  }
+  
+  .AlertListItem:hover::after {
+    transform: scale(2);
+  }
+  
+  .AlertListItem-title {
+    font-size: 18px;
+    margin: 0 8px 4px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+    padding: 4px 8px;
+    color:#333;
+  }
+  
+  .AlertListItem-description {
+    word-wrap: break-word;
+    font-size: initial;
+    text-align: left;
+    padding: 8px;
+    color:#333;
+  }
+
+  .wrapper-class {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 2px solid #ccc;
+    height: 400px;
+  }
+  .editor-class {
+    background-color:#f1f1f1;
+    padding: 1rem;
+    border: 2px solid #ccc;
+  }
+  .toolbar-class {
+    border: 2px solid #ccc;
+  }
