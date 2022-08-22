@@ -1,0 +1,7 @@
+이 폴더는 이력서에 첨부한 URL (https://ideaideaclient.herokuapp.com/)의 작업물입니다.
+
+client 폴더: React를 이용하여 Front-end 구현한 파일들,
+web3 접속 설정 관련 파일들 있음.
+
+server 폴더: nodeJs와 Express 프레임워크를 사용하여 API 서버를 구현한 파일들,
+데이터베이스 테이블 정의한 파일 있음.
